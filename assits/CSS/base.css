@@ -1,0 +1,30 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: line-through;
+     /* يحط خط فوق الكلمة وهاي مفيدة في الخصومات   */
+       text-decoration: overline;
+       /*  بحط خط فوق الكلمة */
+        text-decoration: none; 
+        /*  بحذف الخط اللي تحت الكلمة */
+}
+button{
+    /* background-color: transparent; بخلي خلفية الزر شفافة */
+    /* border: 0; ما الو حدود */
+}
+ul{
+    list-style: none; 
+    /* بتكون القوائم ما في الها رموز جنبها كأنها طايرة  */
+}
+.container{
+    width: calc( 100% - 330px );
+    margin : auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
