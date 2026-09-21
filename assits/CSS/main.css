@@ -25,6 +25,31 @@
     width : 100%;
     margin-bottom: 23px;
 }
+.sellers h2{
+   margin-top: 80px;
+   margin-bottom: 48px;
+   text-align: center; 
+}
+.sells img{
+    width: 100%;
+    margin-bottom: 24px;
+}
+.sellers .row {
+    justify-content: space-between;
+    gap: 30px;
+}
+.sells{
+    width: calc( ( 100% - 90px ) / 4 );
+}
+.pay{
+    margin-top: 38px;
+    border: black 1px solid;
+    text-align: center;
+}
+.sells h3{
+    margin-bottom: 24px;
+}
+
 
 
 
