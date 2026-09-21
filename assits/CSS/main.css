@@ -11,6 +11,20 @@
 .icons .row{
     gap : 24px;
 }
+.collections{
+    text-align: center;
+    text-transform: uppercase;
+}
+.collections .row{
+    gap : 30px;
+}
+.item{
+    width: calc( ( 100% - 90px ) / 4 );
+}
+.item img{
+    width : 100%;
+    margin-bottom: 23px;
+}
 
 
 
