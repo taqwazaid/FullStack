@@ -49,3 +49,125 @@ header .row a {
     font-size: 15px;
     font-family: "Poppins";
 }
+.lessons .container {
+    background-color: #dfefff;
+}
+
+.lessons .top .row {
+    justify-content: flex-start;
+}
+
+.lessons .top h2 {
+    margin: 20px 450px 0px 15px;
+    font-family: "Poppins-semiBold";
+    font-size: 20px;
+}
+
+.lessons .top a {
+    color: #49BBBD;
+    font-size: 11px;
+    font-family: "Poppins-Bold";
+    margin-top: 20px;
+}
+
+.lessons .top {
+    margin-bottom: 25px;
+}
+
+.lessons .lesson {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: calc((100% - 80px) / 3);
+    padding: 15px;
+    margin-bottom: 80px;
+}
+
+.lessons .row {
+    justify-content: space-evenly;
+}
+
+.lessons .lesson .image {
+    width: 100%;
+}
+
+.lessons .lesson h3 {
+    font-family: "Poppins-medium";
+    font-size: 15px;
+    color: #252641;
+}
+
+.lessons .lesson .row {
+    justify-content: flex-start;
+}
+
+.lessons .lesson .row h3 {
+    font-size: 10px;
+}
+
+.lessons .lesson .row img {
+    width: 10%;
+}
+
+.lessons .lessons p {
+    margin-left: 210px;
+    font-size: 10px;
+    color: #000000;
+    font-family: "Poppins-semiBold";
+}
+@media screen and (min-width : 320px) and (max-width : 600px) {
+    header .container {
+        width: calc(100% - 60px);
+    }
+
+    header .pages {
+        display: none;
+    }
+
+    .maneger .row {
+        gap: 5px;
+    }
+
+    .maneger img {
+        width: 30px;
+    }
+
+    .maneger h2 {
+        font-size: 14px;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    .lessons .container {
+        width: calc(100% - 60px);
+    }
+
+    .lessons .top h2 {
+        font-size: 13px;
+        margin-right: 50px;
+    }
+
+    .lessons .top a {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .lessons .lesson {
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+
+    .lessons .lesson h3 {
+        font-size: 13px;
+    }
+
+    .lessons .lessons p {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .lessons .lesson .image {
+        width: 100%;
+    }
+}
