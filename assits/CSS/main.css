@@ -283,6 +283,100 @@ header .row a {
 .head .row .tittleSection4 {
     margin-right: 620px;
 }
+footer {
+    background-color: #252641;
+    overflow: auto;
+}
+
+footer .footerTop {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer .footerTop .container {
+    width: calc(100% - 900px);
+    margin: auto;
+}
+
+.footerTop .row {
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.footerTop h3 {
+    color: #ffffff;
+}
+
+.footerTop .logoName {
+    font-family: "Poppins-Bold";
+    margin-left: 50px;
+}
+
+.footerTop h3 {
+    width: 130px;
+    font-family: "Poppins-semiBold";
+}
+
+.Subscribe {
+    margin-left: 500px;
+    color: #B2B3CF;
+    font-family: "Poppins-medium";
+    margin-bottom: 10px;
+
+}
+
+.footerBody form {
+    margin-left: 430px;
+}
+
+[type="email"] {
+    border-radius: 80%;
+    width: 400px;
+    height: 60px;
+    border: #FFFFFF solid 1px;
+    margin-right: 20px;
+    background-color: #252641;
+}
+
+[type="submit"] {
+    padding: 2%;
+    width: 150px;
+    height: 50px;
+    border-radius: 60%;
+    background-color: #49BBBD;
+}
+
+.footerfooter {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.footerfooter .container {
+    width: calc(100% - 900px);
+    margin: auto;
+}
+
+.footerfooter .row {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footerfooter .row img {
+    height: 45px;
+}
+
+.footerfooter .row p {
+    font-family: "Poppins";
+    color: #B2B3CF;
+    font-size: 12px;
+}
+
+.footerclass {
+    margin: 6px 0px 10px 550px;
+    font-family: "Poppins";
+    color: #B2B3CF;
+    font-size: 12px;
+}
 @media screen and (min-width : 320px) and (max-width : 600px) {
     header .container {
         width: calc(100% - 60px);
@@ -426,6 +520,56 @@ header .row a {
     .head .row .tittleSection4 {
         margin-right: 0px;
     }
+    footer .footerTop .container {
+        width: calc(100% - 60px);
+        margin: auto;
+    }
+
+    .linetop {
+        width: 2px;
+        height: 80px;
+    }
+
+    footer .footerTop {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footerBody form {
+        margin-left: 70px;
+    }
+
+    [type="email"] {
+        width: 150px;
+        height: 50px;
+        border: 2px #83839A solid;
+        border-radius: 60%;
+    }
+
+    .footerfooter .container {
+        width: calc(100% - 60px);
+        margin: auto;
+    }
+
+    .footerfooter .row {
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .Subscribe {
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+
+    [type="submit"] {
+        width: 80px;
+        height: 50px;
+    }
+
+    .footerclass {
+        margin: 6px 0px 10px 120px;
+        font-size: 12px;
+    }
 }
 @media screen and (min-width : 600px) and (max-width : 935px) {
     header .container {
@@ -527,5 +671,55 @@ header .row a {
 
     .head .row .tittleSection4 {
         margin-right: 0px;
+    
+}
+footer .footerTop .container {
+        width: calc(100% - 400px);
+        margin: auto;
+    }
+    .linetop {
+        width: 4px;
+        height: 80px;
+    }
+
+    footer .footerTop {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footerBody form {
+        margin-left: 230px;
+    }
+
+    [type="email"] {
+        width: 200px;
+        height: 50px;
+        border: 2px #83839A solid;
+        border-radius: 60%;
+    }
+
+    .footerfooter .container {
+        width: calc(100% - 400px);
+        margin: auto;
+    }
+
+    .footerfooter .row {
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .Subscribe {
+        margin-left: 220px;
+        margin-bottom: 15px;
+    }
+
+    [type="submit"] {
+        width: 80px;
+        height: 50px;
+    }
+
+    .footerclass {
+        margin: 6px 0px 10px 280px;
+        font-size: 12px;
     }
 }
