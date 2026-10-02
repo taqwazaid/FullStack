@@ -114,6 +114,69 @@ header .row a {
     color: #000000;
     font-family: "Poppins-semiBold";
 }
+.courses .row .course {
+    width: calc((100% - 100px) / 4);
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.courses .row {
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.courses h2 {
+    font-family: "Poppins-semiBold";
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #252641;
+}
+
+.courses .course h3 {
+    font-family: "Poppins-semiBold";
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+.courses .course p {
+    font-family: "Poppins";
+    font-size: 12px;
+    color: #696984;
+    margin-bottom: 60px;
+}
+
+.courses .course img {
+    padding: 20px;
+}
+
+.course .Design-img {
+    background-color: #b0e4e5;
+}
+
+.course .Development-img {
+    background-color: #d9def7;
+}
+
+.course .Development1-img {
+    background-color: #d5e9ff;
+}
+
+.course .Business-img {
+    background-color: #abe6e7;
+}
+
+.course .Marketing-img {
+    background-color: #f4dec0;
+}
+
+.course .Photography-img {
+    background-color: #efc9c7;
+}
+
+.course .Acting-img {
+    background-color: #d8d8dc;
+}
 @media screen and (min-width : 320px) and (max-width : 600px) {
     header .container {
         width: calc(100% - 60px);
@@ -169,5 +232,68 @@ header .row a {
 
     .lessons .lesson .image {
         width: 100%;
+    }
+        .courses .container {
+        width: calc(100% - 60px);
+    }
+
+    .courses .row .course {
+        width: calc((100% - 30px) / 3);
+    }
+
+    .courses .course img {
+        padding: 10px;
+    }
+
+    .courses .course h3 {
+        font-size: 1;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .courses .course p {
+        margin-bottom: 20px;
+        font-size: 9px;
+    }
+
+    .courses .row {
+        gap: 6px;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width : 600px) and (max-width : 935px) {
+    header .container {
+        width: calc(100% - 120px);
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    .maneger img {
+        width: 30px;
+    }
+
+    .row a {
+        font-size: 12px;
+    }
+
+    .lessons .container {
+        width: calc(100% - 120px);
+
+    }
+
+    .lessons .top h2 {
+        font-size: 13px;
+        margin-right: 50px;
+    }
+
+    .lessons .lessons p {
+        margin-left: 70px;
+        font-size: 10px;
+    }
+
+    .courses h2 {
+        font-size: 25px;
     }
 }
