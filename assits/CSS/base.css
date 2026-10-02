@@ -20,7 +20,7 @@ ul{
     /* بتكون القوائم ما في الها رموز جنبها كأنها طايرة  */
 }
 .container{
-    width: calc( 100% - 330px );
+    width: calc( 100% - 240px );
     margin : auto;
 }
 .row{
