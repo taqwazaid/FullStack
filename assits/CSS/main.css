@@ -379,7 +379,7 @@ footer .footerTop .container {
 }
 @media screen and (min-width : 320px) and (max-width : 600px) {
     header .container {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     header .pages {
@@ -403,7 +403,7 @@ footer .footerTop .container {
     }
 
     .lessons .container {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     .lessons .top h2 {
@@ -447,7 +447,7 @@ footer .footerTop .container {
         width: 100%;
     }
     .courses .container {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
     .courses h2{
         font-size: 15px;
@@ -477,7 +477,7 @@ footer .footerTop .container {
         justify-content: space-evenly;
     }
     .recomendation .container {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     .recomendation .container .secondcontainer {
@@ -543,7 +543,7 @@ footer .footerTop .container {
         margin-right: 0px;
     }
     footer .footerTop .container {
-        width: calc(( 100% - 60px ));
+        width: calc(( 100% - 30px ));
         margin: auto;
     }
     .back-logo{
