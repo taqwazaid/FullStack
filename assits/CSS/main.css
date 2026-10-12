@@ -582,7 +582,7 @@ footer .footerTop .container {
     }
 
     .footerfooter .container {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
         margin: auto;
     }
     [type="submit"] {
