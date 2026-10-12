@@ -585,18 +585,12 @@ footer .footerTop .container {
         width: calc(100% - 60px);
         margin: auto;
     }
-
-    .footerfooter .row {
-        justify-content: space-between;
-        gap: 5px;
-    }
-
     [type="submit"] {
         width: 80px;
         height: 50px;
     }
     .footerfooter{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .footerclass {
         margin: 6px 0px 10px 120px;
