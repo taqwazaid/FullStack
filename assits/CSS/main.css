@@ -223,8 +223,8 @@ header .row a {
 }
 
 .recomendation .recommend .icons {
-    width: 8%;
-    margin-right: 5px;
+    width: 5%;
+    margin-right: 3px;
 }
 
 .recommend .recommendtop p {
@@ -309,7 +309,6 @@ footer .footerTop .container {
 
 .footerTop .logoName {
     font-family: "Poppins-Bold";
-    margin-left: 50px;
 }
 
 .footerTop h3 {
@@ -377,11 +376,10 @@ footer .footerTop .container {
     color: #B2B3CF;
     font-size: 12px;
 }
-@media screen and (min-width : 320px) and (max-width : 600px) {
+@media (max-width : 500px) {
     header .container {
         width: calc(100% - 30px);
     }
-
     header .pages {
         display: none;
     }
@@ -418,30 +416,34 @@ footer .footerTop .container {
     }
 
     .lessons .lesson {
-        padding: 6px;
-        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         border-radius: 10%;
+        padding: 10px;
+        margin: 10px;
     }
 
     .lessons .row .lesson h3 {
-        font-size: 7px;
+        font-size: 10px;
         margin-bottom: 4px;
     }
 
     .lessons .lesson p {
         margin-left: 0px;
-        font-size: 7px;
+        font-size: 9px;
     }
     .lessons .lesson .row h3{
         font-size: 8px;
         margin-top: 3px;
     }
     .lessons .lesson .row img{
-        width: 20%;
+        width: 10%;
     }
     .lessons .lesson .image {
         width: 100%;
         border-radius: 10%;
+        margin-bottom: 10px;
     }
     .lessons .lesson img{
         width: 100%;
@@ -450,26 +452,27 @@ footer .footerTop .container {
         width: calc(100% - 30px);
     }
     .courses h2{
-        font-size: 15px;
+        margin-left: 10px;
+        font-size: 13px;
     }
     .courses .row .course {
         width: calc((100% - 30px) / 2);
     }
 
     .courses .course img {
-        padding: 7px;
-        width: 20%;
+        padding: 5px;
+        width: 30%;
     }
 
     .courses .course h3 {
-        font-size: 11px;
+        font-size: 8px;
         margin-top: 3px;
         margin-bottom: 3px;
     }
 
     .courses .course p {
         margin-bottom: 20px;
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .courses .row {
@@ -495,9 +498,12 @@ footer .footerTop .container {
         margin-top: 0px;
         margin-left: 65px;
     }
-
+    .recommendedCoursess{
+        display: flex;
+        flex-direction: column;
+    }
     .recomendation .recommend {
-        width: calc((100% - 30px) / 2);
+        width: 90%;
         padding: 7px;
         margin-bottom: 20px;
         border-radius: 8%;
@@ -511,32 +517,47 @@ footer .footerTop .container {
         font-size: 7px;
     }
     .recomendation .recommend .remendImage {
-        height: 55px;
+        height: 85px;
         width: 100%;
         border-radius: 10%;
         margin-bottom: 5px;
     }
-
-    .recomendation .recommend .topGap {
-        margin-right: 25px;
+    .icons{
+        width: 100%;
+        margin-right: 15px;
     }
-
     .recommend .recommendtop p {
         font-size: 7px;
     }
-
-    .beforeDiscount {
-        margin-right: 6px;
+    .recomendation .recommend .topGap{
+        margin-right: 107px;
     }
+    .recommendBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
+.lina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
+
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
     .recommendBottom h4 {
-        margin-right: 15px;
         font-size: 7px;
     }
 
     .afterDiscount {
         font-size: 10px;
-        margin-left: 3px;
     }
 
     .head .row .tittleSection4 {
@@ -549,7 +570,6 @@ footer .footerTop .container {
     .back-logo{
         width : 20%;
         margin-left: 30px;
-        /* margin-right: 30px; */
     }
     .linetop {
         width: 10%;
@@ -561,8 +581,8 @@ footer .footerTop .container {
         width: 90px;
     }
     .Subscribe{
-        font-size: 15px;
-        margin-left: 70px;
+        font-size: 10px;
+        margin-left: 75px;
         margin-bottom: 10px;
     }
     footer .footerTop {
@@ -571,7 +591,7 @@ footer .footerTop .container {
     }
 
     .footerBody form {
-        margin-left: 70px;
+        margin-left:50px;
     }
 
     [type="email"] {
@@ -586,20 +606,28 @@ footer .footerTop .container {
         margin: auto;
     }
     [type="submit"] {
-        width: 80px;
-        height: 50px;
+        width: 50px;
+        height: 40px;
+        border-radius: 20%;
+        text-align: center;
     }
     .footerfooter{
         margin-left: 0px;
     }
     .footerclass {
-        margin: 6px 0px 10px 120px;
+        margin: 6px 0px 10px 90px;
         font-size: 12px;
     }
+    .footerfooter .row p{
+        font-size: 9px;
+    }
+    .footerfooter .row{
+        gap: 12px;
+    }
 }
-@media screen and (min-width : 600px) and (max-width : 935px) {
+@media (min-width : 501px) and (max-width : 1000px) {
     header .container {
-        width: calc(100% - 120px);
+        width: calc(100% - 60px);
     }
 
     header .logo img {
@@ -609,33 +637,54 @@ footer .footerTop .container {
     .maneger img {
         width: 30px;
     }
-
-    .row a {
-        font-size: 12px;
+    .maneger .row {
+        gap: 6px;
+    }
+    header .row a {
+        font-size: 10px;
     }
 
     .lessons .container {
-        width: calc(100% - 120px);
+        width: calc(100% - 60px);
 
     }
-
+    .lessons .row .lesson h3{
+        font-size: 12px;
+    }
     .lessons .top h2 {
         font-size: 13px;
         margin-right: 50px;
     }
-
-    .lessons .lessons p {
-        margin-left: 70px;
-        font-size: 10px;
+    .lessons .lesson{
+        padding: 7px;
     }
-
+    .lessons .lesson .row h3{
+        font-size: 8px;
+    }
+    .lessons .lesson .row{
+        margin-top: 5px;
+    }
+    .lessons .lesson p{
+        margin-left: 0px;
+        font-size: 7px;
+    }
+    .courses .container {
+        width: calc(100% - 60px);
+    }
     .courses h2 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .courses .row .course {
+        width: calc( ( 100% - 10px ) / 3);
+
+    }
+    .courses .row{
+        display: flex;
+        justify-content: space-evenly;
     }
        .recomendation .container {
         width: calc(100% - 60px);
     }
-
     .recomendation .container .secondcontainer {
         width: calc(100% - 50px);
         margin: auto;
@@ -653,13 +702,13 @@ footer .footerTop .container {
     }
 
     .recomendation .recommend {
-        width: calc((100% - 30px) / 2);
+        width: calc( ( 100% - 10px ) / 3) ;
         padding: 10px;
         margin-bottom: 40px;
     }
 
     .recomendation .recommend h3 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -669,38 +718,55 @@ footer .footerTop .container {
     }
 
     .recomendation .recommend .topGap {
-        margin-right: 120px;
+        margin-right: 90px;
     }
 
     .recommend .recommendtop p {
-        font-size: 12px;
+        font-size: 8px;
     }
-
     .recommendP {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .beforeDiscount {
-        margin-right: 10px;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .recommendBottom h4 {
-        margin-right: 120px;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .afterDiscount {
-        font-size: 15px;
-        margin-left: 0px;
+        font-size: 10px;
     }
+
+        .recommendBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.lina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
+
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
 
     .head .row .tittleSection4 {
         margin-right: 0px;
     
 }
 footer .footerTop .container {
-        width: calc(100% - 400px);
+        width: calc(100% - 450px);
         margin: auto;
     }
     .linetop {
@@ -714,7 +780,7 @@ footer .footerTop .container {
     }
 
     .footerBody form {
-        margin-left: 230px;
+        margin-left: 180px;
     }
 
     [type="email"] {
@@ -725,7 +791,7 @@ footer .footerTop .container {
     }
 
     .footerfooter .container {
-        width: calc(100% - 400px);
+        width: calc(100% - 160px);
         margin: auto;
     }
 
@@ -733,9 +799,12 @@ footer .footerTop .container {
         justify-content: space-between;
         gap: 5px;
     }
-
+    .footerTop h3{
+        font-size: 12px;
+        width: 70px;
+    }
     .Subscribe {
-        margin-left: 220px;
+        margin-left: 150px;
         margin-bottom: 15px;
     }
 
@@ -745,7 +814,76 @@ footer .footerTop .container {
     }
 
     .footerclass {
-        margin: 6px 0px 10px 280px;
+        margin: 6px 0px 10px 250px;
         font-size: 12px;
     }
+    .footerTop .logoName{
+        margin-right: 0px;
+        width: 30%;
+    }
+    .footerTop .row{
+         display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width : 1001px) {
+    .lessons .top h2 {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+    .lessons .lessons p {
+        margin-left: 200px;
+    }
+    .recomendation .recommend .icons{
+        width: 5%;
+    }
+    .recommendBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.head .row h2{
+    margin-right: 30px;
+}
+.recomendation .recommend .topGap{
+    margin-right: 80px;
+}
+.lina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
+
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+}
+    .head .row .tittleSection4 {
+        margin-right: 50px;
+    
+}
+footer .footerTop {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer .footerTop .container {
+    width: calc(100% - 600px);
+    margin: auto;
+}
+.footerTop .row {
+    justify-content: space-evenly;
+    gap: 0px;
+}
+.footerfooter .container {
+        width: calc(100% - 800px);
+        margin: auto;
+}
+.footerfooter .row{
+    gap: 5px;
+}
 }
