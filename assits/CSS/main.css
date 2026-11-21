@@ -85,6 +85,189 @@ header .container .navGap {
     display: none;
 }
 
+.section1 {
+    margin-top: 90px;
+}
+
+.section1 .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 39px;
+}
+
+.section1 .left .hotCoffey {
+    display: none;
+}
+
+.section1 .fresh {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #845326;
+}
+
+.section1 .freshDaily {
+    gap: 8px;
+    background-color: #F6ECE2;
+    width: fit-content;
+    padding: 6px 14px;
+    border: 1px solid #D3C3C0;
+    border-radius: 10px;
+}
+
+.section1 h1 {
+    font-family: playfair semibold;
+    color: #0E0402;
+    font-size: 60px;
+}
+
+.section1 .title {
+    color: #4F4442;
+    font-family: jakartaReguler;
+    font-size: 18px;
+}
+
+.btns .btn1 {
+    background-color: #2B1B17;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid #0E0402;
+    color: #FFF8F3;
+    font-family: jakarta semibold;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+
+.btns .btn1:hover {
+    background-color: #ae4f35;
+    border: #d19180 1px solid;
+}
+
+.btns .row {
+    gap: 16px;
+    margin: 24px 0px;
+}
+
+.btns .btn2 {
+    background-color: #FFF8F3;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid #0E0402;
+    color: #2B1B17;
+    font-family: jakarta semibold;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.btns .btn2:hover {
+    background-color: #ae4f35;
+    border: #d19180 1px solid;
+    color: #FFF8F3;
+}
+
+.left .section1footer {
+    border-top: solid 2px rgb(79, 68, 66, 5%);
+}
+
+.section1footer .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+}
+
+.section1footer .bord {
+    border-right: solid 2px rgb(79, 68, 66, 5%);
+    margin-top: 10px;
+}
+
+.section1footer .rate .top {
+    font-family: playfair semibold;
+    font-size: 28px;
+    color: #0E0402;
+}
+
+.section1footer .rate .bottom1 {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #4F4442;
+}
+
+.section1footer .rate .bottom2 {
+    display: none;
+}
+
+.section1footer .rate .row .star {
+    width: 10%;
+}
+
+.section1footer .rate .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+}
+
+.section1 .right {
+    position: relative;
+}
+
+.section1 .right .rotate {
+    background-color: #F0E7DD;
+    height: 105%;
+    transform: rotate(-2deg);
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.section1 .right .coffeyimg {
+    padding: 13px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 20px;
+    left: 15px;
+    width: 95%;
+    height: 95%;
+}
+
+.machine {
+    background-color: #FFF8F3;
+    z-index: 2;
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.coffey .ethio {
+    display: none;
+}
+
+.machine .row {
+    gap: 12px;
+}
+
+.machine .coffymachine {
+    padding: 11px 11px;
+    background-color: rgb(132, 83, 38, 15%);
+    border-radius: 12px;
+}
+
+.machine .roasted .first {
+    font-family: jakarta semibold;
+    font-size: 14px;
+    color: #0E0402;
+}
+
+.machine .roasted .second {
+    font-family: jakartaReguler;
+    font-size: 14px;
+    color: #4F4442;
+}
 
 
 @media (max-width : 800px) {
@@ -127,5 +310,159 @@ header .container .navGap {
         gap: 5px;
     }
 
+    .section1 {
+        margin-top: 50px;
+    }
+
+    .section1 .container {
+        width: calc(100% - 20px);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 .left .hotCoffey {
+        display: block;
+    }
+
+    .section1 .left .fire {
+        display: none;
+    }
+
+    .section1 .fresh {
+        font-size: 10px;
+
+    }
+
+    .section1 h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .section1 .title {
+        font-size: 12px;
+    }
+
+    .btns .btn1 {
+        width: 100%;
+    }
+
+    .btns .btn2 {
+        width: 100%;
+    }
+
+    .section1 .left {
+        display: contents;
+    }
+
+    /* .section1 .right {
+        display: contents;
+    } */
+
+    .section1 .right .rotate {
+        display: none;
+    }
+
+    .section1 .right .coffey {
+        position: relative;
+    }
+
+    .section1 .right .coffeyimg {
+        order: 1;
+        padding: 0px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    .section1 .left .section1footer {
+        order: 2;
+    }
+
+    .machine {
+        /* position: absolute; */
+        /* z-index: 1; */
+        /* left: 0px; */
+        display: none;
+    }
+
+    .coffey .ethio {
+        display: block;
+    }
+
+    .coffey .ethio .row {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        gap: 5px;
+        background-color: #FFF8F3;
+        border-radius: 12px;
+        padding: 4px 10px;
+    }
+
+    .coffey .ethio .row .icon {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #FEBC85;
+    }
+
+    .coffey .ethio .row p {
+        font-family: jakartaMedium;
+        font-size: 12px;
+        color: #0E0402;
+    }
+
+    .section1footer .rate .bottom1 {
+        display: none;
+    }
+
+    .section1footer .rate .bottom2 {
+        display: block;
+        color: #4F4442;
+        font-family: jakartaMedium;
+        font-size: 10px;
+    }
+
+    .section1footer .row2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* gap: 16px; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 8px;
+    }
+
+    .section1footer .rate {
+        margin-top: 0px;
+        padding-right: 0px;
+    }
+
+    .left .section1footer {
+        border: solid 2px rgb(79, 68, 66, 5%);
+        border-radius: 8px;
+        background-color: #FCF2E8;
+    }
+
+    .section1footer .rate .top {
+        font-size: 20px;
+    }
+
+    .section1footer .rate .row .star {
+        width: 10%;
+    }
+
+    .section1footer .rate .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
 
 }
