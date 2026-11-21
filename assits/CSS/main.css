@@ -1,889 +1,131 @@
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
+    font-family: 'playfair semibold';
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: "Poppins-semiBold";
-    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-family: 'jakarta semibold';
+    src: url('../fonts/PlusJakartaSans-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../fonts/Poppins-Bold.ttf");
+    font-family: 'jakartaMedium';
+    src: url('../fonts/PlusJakartaSans-Medium.ttf');
 }
 
+/* @font-face {
+    font-family: 'jakartaReguler';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+} */
 @font-face {
-    font-family: "Poppins-medium";
-    src: url("../fonts/Poppins-Medium.ttf");
+    font-family: 'jakartaReguler';
+    src: url('../fonts/PlusJakartaSans-Regular.ttf');
 }
 
-@font-face {
-    font-family: "Poppins-LightItalic";
-    src: url("../fonts/Poppins-LightItalic.ttf");
+body {
+    background-color: #FFF8F3;
+    width: 100%;
 }
+
 header {
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-header .row {
-    justify-content: space-between;
-}
-
-.pages .row {
-    gap: 30px;
-}
-
-header .row a {
-    font-size: 18px;
-    font-family: "Poppins";
-    color: #5B5B5B;
-}
-
-.maneger .row {
-    gap: 18.5px;
-}
-
-.maneger h2 {
-    font-size: 15px;
-    font-family: "Poppins";
-}
-.lessons .container {
-    background-color: #dfefff;
-}
-
-.lessons .top .row {
-    justify-content: flex-start;
-}
-
-.lessons .top h2 {
-    margin: 20px 450px 0px 15px;
-    font-family: "Poppins-semiBold";
-    font-size: 20px;
-}
-
-.lessons .top a {
-    color: #49BBBD;
-    font-size: 11px;
-    font-family: "Poppins-Bold";
-    margin-top: 20px;
-}
-
-.lessons .top {
-    margin-bottom: 25px;
-}
-
-.lessons .lesson {
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    width: calc((100% - 80px) / 3);
-    padding: 15px;
-    margin-bottom: 80px;
-}
-
-.lessons .row {
-    justify-content: space-evenly;
-}
-
-.lessons .lesson .image {
     width: 100%;
+    padding: 15px 0;
+    border-bottom: solid 2px rgb(79, 68, 66, 5%);
 }
 
-.lessons .lesson h3 {
-    font-family: "Poppins-medium";
-    font-size: 15px;
-    color: #252641;
-}
-
-.lessons .lesson .row {
-    justify-content: flex-start;
-}
-
-.lessons .lesson .row h3 {
-    font-size: 10px;
-}
-
-.lessons .lesson .row img {
-    width: 10%;
-}
-
-.lessons .lessons p {
-    margin-left: 210px;
-    font-size: 10px;
-    color: #000000;
-    font-family: "Poppins-semiBold";
-}
-.courses .row .course {
-    width: calc((100% - 100px) / 4);
-    text-align: center;
-    background-color: #FFFFFF;
-}
-
-.courses .row {
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.courses h2 {
-    font-family: "Poppins-semiBold";
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    color: #252641;
-}
-
-.courses .course h3 {
-    font-family: "Poppins-semiBold";
-    margin-top: 13px;
-    margin-bottom: 20px;
-}
-
-.courses .course p {
-    font-family: "Poppins";
-    font-size: 12px;
-    color: #696984;
-    margin-bottom: 60px;
-}
-
-.courses .course img {
-    padding: 20px;
-}
-
-.course .Design-img {
-    background-color: #b0e4e5;
-}
-
-.course .Development-img {
-    background-color: #d9def7;
-}
-
-.course .Development1-img {
-    background-color: #d5e9ff;
-}
-
-.course .Business-img {
-    background-color: #abe6e7;
-}
-
-.course .Marketing-img {
-    background-color: #f4dec0;
-}
-
-.course .Photography-img {
-    background-color: #efc9c7;
-}
-
-.course .Acting-img {
-    background-color: #d8d8dc;
-}
-.recomendation {
-    margin-bottom: 60px;
-}
-
-.recomendation .container {
-    background-color: #dfefff;
-}
-
-.recomendation .container .secondcontainer {
-    width: calc(100% - 100px);
-    margin: auto;
-}
-
-.head .row h2 {
-    margin: 60px 660px 40px 0px;
-    font-family: "Poppins-medium";
-    font-size: 18px;
-}
-
-.head .row a {
-    color: #49BBBD;
-    font-size: 11px;
-    font-family: "Poppins-Bold";
-    margin-top: 20px;
-}
-
-.recomendation .recommend {
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    width: calc((100% - 90px) / 4);
-    padding: 10px;
-    margin-bottom: 60px;
-}
-
-.recomendation .recommendedCoursess {
-    gap: 30px;
-    justify-content: space-evenly;
-}
-
-.recomendation .recommend .remendImage {
-    width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
-}
-
-.recomendation .recommend .icons {
-    width: 5%;
-    margin-right: 3px;
-}
-
-.recommend .recommendtop p {
-    font-family: "Poppins-medium";
-    font-size: 9px;
-    color: #696984;
-}
-
-.recomendation .recommend .topGap {
-    margin-right: 75px;
-}
-
-.recomendation .recommend h3 {
-    font-family: "Poppins-medium";
-    font-size: 15px;
-    color: #252641;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.recommendP {
-    font-family: "Poppins-medium";
-    font-size: 11px;
-    color: #696984;
-    margin-bottom: 10px;
-}
-
-.recommendBottom img {
-    width: 15%;
-}
-
-.recommendBottom h4 {
-    font-family: "Poppins-medium";
-    font-size: 10px;
-    margin-right: 70px;
-}
-
-.beforeDiscount {
-    font-family: "Poppins-LightItalic";
-    opacity: 50%;
-    font-size: 11px;
-    text-decoration: line-through;
-    margin-right: 10px;
-}
-
-.afterDiscount {
-    font-family: "Poppins-Bold";
-    font-size: 15px;
-    color: #49BBBD;
-}
-
-.Back-ground .container {
-    background-color: #ffffff;
-}
-
-.head .row .tittleSection4 {
-    margin-right: 620px;
-}
-footer {
-    background-color: #252641;
-    overflow: auto;
-}
-
-footer .footerTop {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-footer .footerTop .container {
-    width: calc(100% - 900px);
-    margin: auto;
-}
-
-.footerTop .row {
-    justify-content: space-between;
-    gap: 0px;
-}
-
-.footerTop h3 {
-    color: #ffffff;
-}
-
-.footerTop .logoName {
-    font-family: "Poppins-Bold";
-}
-
-.footerTop h3 {
-    width: 130px;
-    font-family: "Poppins-semiBold";
-}
-
-.Subscribe {
-    margin-left: 500px;
-    color: #B2B3CF;
-    font-family: "Poppins-medium";
-    margin-bottom: 10px;
-
-}
-
-.footerBody form {
-    margin-left: 430px;
-}
-
-[type="email"] {
-    border-radius: 80%;
-    width: 400px;
-    height: 60px;
-    border: #FFFFFF solid 1px;
-    margin-right: 20px;
-    background-color: #252641;
-}
-
-[type="submit"] {
-    padding: 2%;
-    width: 150px;
-    height: 50px;
-    border-radius: 60%;
-    background-color: #49BBBD;
-}
-
-.footerfooter {
-    margin-top: 30px;
-    margin-left: 50px;
-}
-
-.footerfooter .container {
-    width: calc(100% - 900px);
-    margin: auto;
-}
-
-.footerfooter .row {
-    justify-content: space-between;
+.logo .row {
     gap: 10px;
 }
 
-.footerfooter .row img {
-    height: 45px;
+.logo p {
+    font-family: playfair semibold;
+    font-size: 28px;
+    color: #0E0402;
 }
 
-.footerfooter .row p {
-    font-family: "Poppins";
-    color: #B2B3CF;
-    font-size: 12px;
+header .container .navGap {
+    justify-content: space-between;
+    margin: auto;
 }
 
-.footerclass {
-    margin: 6px 0px 10px 550px;
-    font-family: "Poppins";
-    color: #B2B3CF;
-    font-size: 12px;
+.sections .row {
+    gap: 32px;
 }
-@media (max-width : 500px) {
-    header .container {
-        width: calc(100% - 30px);
+
+.sections .link a {
+    font-family: jakartaMedium;
+    font-size: 14px;
+    color: #4F4442;
+    display: inline-block;
+}
+
+.endNavbar .visit {
+    padding: 10px 20px;
+    font-family: jakarta semibold;
+    background-color: #2B1B17;
+    color: #FFF8F3;
+    border-radius: 10px;
+    border: #0E0402 1px solid;
+    transition: all .4s;
+    margin-left: 0px;
+}
+
+.endNavbar .visit:hover {
+    background-color: #ae4f35;
+    border: #d19180 1px solid;
+}
+
+.sections .link a:hover {
+    border-bottom: 1px solid #845326;
+    color: #845326;
+    font-family: jakarta semibold;
+}
+
+.endNavbar .list {
+    display: none;
+}
+
+
+
+@media (max-width : 800px) {
+    header .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #845326;
     }
-    header .pages {
+
+    .logo img {
         display: none;
     }
 
-    .maneger .row {
-        gap: 5px;
-    }
-
-    .maneger img {
-        width: 30px;
-    }
-
-    .maneger h2 {
-        font-size: 14px;
-    }
-
-    header .logo img {
-        width: 50px;
-    }
-
-    .lessons .container {
-        width: calc(100% - 30px);
-    }
-
-    .lessons .top h2 {
-        font-size: 10px;
-        margin-right: 0px;
-    }
-
-    .lessons .top a {
-        margin-left: 15px;
-        margin-top: 20px;
-        font-size: 8px;
-    }
-
-    .lessons .lesson {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10%;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .lessons .row .lesson h3 {
-        font-size: 10px;
-        margin-bottom: 4px;
-    }
-
-    .lessons .lesson p {
-        margin-left: 0px;
-        font-size: 9px;
-    }
-    .lessons .lesson .row h3{
-        font-size: 8px;
-        margin-top: 3px;
-    }
-    .lessons .lesson .row img{
-        width: 10%;
-    }
-    .lessons .lesson .image {
-        width: 100%;
-        border-radius: 10%;
-        margin-bottom: 10px;
-    }
-    .lessons .lesson img{
-        width: 100%;
-    }
-    .courses .container {
-        width: calc(100% - 30px);
-    }
-    .courses h2{
-        margin-left: 10px;
-        font-size: 13px;
-    }
-    .courses .row .course {
-        width: calc((100% - 30px) / 2);
-    }
-
-    .courses .course img {
-        padding: 5px;
-        width: 30%;
-    }
-
-    .courses .course h3 {
-        font-size: 8px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-
-    .courses .course p {
-        margin-bottom: 20px;
-        font-size: 7px;
-    }
-
-    .courses .row {
-        gap: 30px;
-        justify-content: space-evenly;
-    }
-    .recomendation .container {
-        width: calc(100% - 30px);
-    }
-
-    .recomendation .container .secondcontainer {
-        width: calc(100% - 50px);
-        margin: auto;
-    }
-
-    .head .row h2 {
-        margin: 20px 0px 20px 0px;
-        font-size: 9px;
-    }
-
-    .head .row a {
-        font-size: 8px;
-        margin-top: 0px;
-        margin-left: 65px;
-    }
-    .recommendedCoursess{
-        display: flex;
-        flex-direction: column;
-    }
-    .recomendation .recommend {
-        width: 90%;
-        padding: 7px;
-        margin-bottom: 20px;
-        border-radius: 8%;
-    }
-    .recomendation .recommend h3 {
-        font-size: 9px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .recommendP{
-        font-size: 7px;
-    }
-    .recomendation .recommend .remendImage {
-        height: 85px;
-        width: 100%;
-        border-radius: 10%;
-        margin-bottom: 5px;
-    }
-    .icons{
-        width: 100%;
-        margin-right: 15px;
-    }
-    .recommend .recommendtop p {
-        font-size: 7px;
-    }
-    .recomendation .recommend .topGap{
-        margin-right: 107px;
-    }
-    .recommendBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.lina {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-
-.discount {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-    .recommendBottom h4 {
-        font-size: 7px;
-    }
-
-    .afterDiscount {
-        font-size: 10px;
-    }
-
-    .head .row .tittleSection4 {
-        margin-right: 0px;
-    }
-    footer .footerTop .container {
-        width: calc(( 100% - 30px ));
-        margin: auto;
-    }
-    .back-logo{
-        width : 20%;
-        margin-left: 30px;
-    }
-    .linetop {
-        width: 10%;
-        height: 40px;
-        margin-left: 20px;
-    }
-    .footerTop h3{
-        font-size: 12px;
-        width: 90px;
-    }
-    .Subscribe{
-        font-size: 10px;
-        margin-left: 75px;
-        margin-bottom: 10px;
-    }
-    footer .footerTop {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .footerBody form {
-        margin-left:50px;
-    }
-
-    [type="email"] {
-        width: 150px;
-        height: 50px;
-        border: 2px #83839A solid;
-        border-radius: 60%;
-    }
-
-    .footerfooter .container {
-        width: calc(100% - 30px);
-        margin: auto;
-    }
-    [type="submit"] {
-        width: 50px;
-        height: 40px;
-        border-radius: 20%;
-        text-align: center;
-    }
-    .footerfooter{
-        margin-left: 0px;
-    }
-    .footerclass {
-        margin: 6px 0px 10px 90px;
-        font-size: 12px;
-    }
-    .footerfooter .row p{
-        font-size: 9px;
-    }
-    .footerfooter .row{
-        gap: 12px;
-    }
-}
-@media (min-width : 501px) and (max-width : 1000px) {
     header .container {
-        width: calc(100% - 60px);
-    }
-
-    header .logo img {
-        width: 50px;
-    }
-
-    .maneger img {
-        width: 30px;
-    }
-    .maneger .row {
-        gap: 6px;
-    }
-    header .row a {
-        font-size: 10px;
-    }
-
-    .lessons .container {
-        width: calc(100% - 60px);
-
-    }
-    .lessons .row .lesson h3{
-        font-size: 12px;
-    }
-    .lessons .top h2 {
-        font-size: 13px;
-        margin-right: 50px;
-    }
-    .lessons .lesson{
-        padding: 7px;
-    }
-    .lessons .lesson .row h3{
-        font-size: 8px;
-    }
-    .lessons .lesson .row{
-        margin-top: 5px;
-    }
-    .lessons .lesson p{
-        margin-left: 0px;
-        font-size: 7px;
-    }
-    .courses .container {
-        width: calc(100% - 60px);
-    }
-    .courses h2 {
-        font-size: 20px;
-    }
-    .courses .row .course {
-        width: calc( ( 100% - 10px ) / 3);
-
-    }
-    .courses .row{
-        display: flex;
-        justify-content: space-evenly;
-    }
-       .recomendation .container {
-        width: calc(100% - 60px);
-    }
-    .recomendation .container .secondcontainer {
-        width: calc(100% - 50px);
+        width: calc(100% - 20px);
         margin: auto;
     }
 
-    .head .row h2 {
-        margin: 30px 0px 20px 0px;
-        font-size: 20px;
+    .sections {
+        display: none;
     }
 
-    .head .row a {
+    .logo p {
         font-size: 15px;
-        margin-top: 10px;
-        margin-left: 330px;
     }
 
-    .recomendation .recommend {
-        width: calc( ( 100% - 10px ) / 3) ;
-        padding: 10px;
-        margin-bottom: 40px;
+    .endNavbar .visit {
+        padding: 5px 10px;
+        font-size: 11px;
     }
 
-    .recomendation .recommend h3 {
-        font-size: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .endNavbar .list {
+        display: block;
+        background-color: #FFF8F3;
+        border: none;
     }
 
-    .recomendation .recommend .remendImage {
-        height: 130px;
-    }
-
-    .recomendation .recommend .topGap {
-        margin-right: 90px;
-    }
-
-    .recommend .recommendtop p {
-        font-size: 8px;
-    }
-    .recommendP {
-        font-size: 10px;
-    }
-
-    .beforeDiscount {
-        font-size: 10px;
-    }
-
-    .recommendBottom h4 {
-        font-size: 10px;
-    }
-
-    .afterDiscount {
-        font-size: 10px;
-    }
-
-        .recommendBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.lina {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-
-.discount {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-
-    .head .row .tittleSection4 {
-        margin-right: 0px;
-    
-}
-footer .footerTop .container {
-        width: calc(100% - 450px);
-        margin: auto;
-    }
-    .linetop {
-        width: 4px;
-        height: 80px;
-    }
-
-    footer .footerTop {
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-
-    .footerBody form {
-        margin-left: 180px;
-    }
-
-    [type="email"] {
-        width: 200px;
-        height: 50px;
-        border: 2px #83839A solid;
-        border-radius: 60%;
-    }
-
-    .footerfooter .container {
-        width: calc(100% - 160px);
-        margin: auto;
-    }
-
-    .footerfooter .row {
-        justify-content: space-between;
+    .endNavbar .row {
         gap: 5px;
     }
-    .footerTop h3{
-        font-size: 12px;
-        width: 70px;
-    }
-    .Subscribe {
-        margin-left: 150px;
-        margin-bottom: 15px;
-    }
 
-    [type="submit"] {
-        width: 80px;
-        height: 50px;
-    }
 
-    .footerclass {
-        margin: 6px 0px 10px 250px;
-        font-size: 12px;
-    }
-    .footerTop .logoName{
-        margin-right: 0px;
-        width: 30%;
-    }
-    .footerTop .row{
-         display: flex;
-        justify-content: space-evenly;
-    }
-}
-@media (min-width : 1001px) {
-    .lessons .top h2 {
-        font-size: 20px;
-        margin-right: 50px;
-    }
-    .lessons .lessons p {
-        margin-left: 200px;
-    }
-    .recomendation .recommend .icons{
-        width: 5%;
-    }
-    .recommendBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.head .row h2{
-    margin-right: 30px;
-}
-.recomendation .recommend .topGap{
-    margin-right: 80px;
-}
-.lina {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-
-.discount {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-}
-    .head .row .tittleSection4 {
-        margin-right: 50px;
-    
-}
-footer .footerTop {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-footer .footerTop .container {
-    width: calc(100% - 600px);
-    margin: auto;
-}
-.footerTop .row {
-    justify-content: space-evenly;
-    gap: 0px;
-}
-.footerfooter .container {
-        width: calc(100% - 800px);
-        margin: auto;
-}
-.footerfooter .row{
-    gap: 5px;
-}
 }
