@@ -11,6 +11,9 @@ a{
         text-decoration: none; 
         /*  بحذف الخط اللي تحت الكلمة */
 }
+html, body{
+    width: 100%;
+}
 button{
     /* background-color: transparent; بخلي خلفية الزر شفافة */
     /* border: 0; ما الو حدود */
@@ -20,11 +23,12 @@ ul{
     /* بتكون القوائم ما في الها رموز جنبها كأنها طايرة  */
 }
 .container{
-    width: calc( 100% - 240px );
+    width: calc( 100% - 96px );
     margin : auto;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    /* justify-content: center; */
 }
