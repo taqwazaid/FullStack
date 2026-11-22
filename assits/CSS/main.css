@@ -87,6 +87,7 @@ header .container .navGap {
 
 .section1 {
     margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 .section1 .container {
@@ -269,6 +270,166 @@ header .container .navGap {
     color: #4F4442;
 }
 
+.section2 {
+    background-color: #FCF2E8;
+}
+
+.section2 .s2title {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.section2 .s2title .curated {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #845326;
+}
+
+.section2 .s2title h2 {
+    font-family: playfair semibold;
+    font-size: 40px;
+    color: #0E0402;
+}
+
+.section2 .s2title .Handcrafted {
+    font-family: jakartaReguler;
+    font-size: 16px;
+    color: #4F4442;
+    margin-bottom: 64px;
+}
+
+.section2 .drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+    padding-bottom: 113px;
+}
+
+.drink:hover {
+    transform: scale(1.09);
+}
+
+.section2 .drink {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+
+.section2 .drink .image {
+    position: relative;
+}
+
+.section2 .drink .item {
+    width: 100%;
+    height: 50%;
+    border-radius: 3px;
+    z-index: 0;
+}
+
+.section2 .drink .signiture {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: 16px;
+    padding: 4px 12px;
+    background-color: #FFF8F3;
+    border-radius: 12px;
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #845326;
+}
+
+.section2 .drink .price {
+    position: absolute;
+    z-index: 1;
+    bottom: 16px;
+    right: 16px;
+    padding: 4px 12px;
+    background-color: #2B1B17;
+    border-radius: 4px;
+    font-family: jakarta semibold;
+    font-size: 14px;
+    color: #FFF8F3;
+}
+
+.section2 .drink .description {
+    padding: 24px;
+}
+
+.section2 .drink .description .row .hot {
+    display: none;
+}
+
+.section2 .drink .description .order .row .bayingIcone {
+    display: none;
+}
+
+.section2 .drink .description h3 {
+    font-family: playfair semibold;
+    font-size: 20px;
+    color: #0E0402;
+    margin-bottom: 8px;
+}
+
+.section2 .drink .description .ingredients {
+    font-family: jakartaReguler;
+    font-size: 14px;
+    color: #4F4442;
+    padding-bottom: 8px;
+    border-bottom: solid 2px rgb(79, 68, 66, 3%);
+}
+
+.s2bottom .row {
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.s2bottom .row .first {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #4F4442;
+}
+
+.s2bottom .row .second {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #845326;
+}
+
+.section2 .drink .description .order .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background-color: #F0E7DD;
+    border-radius: 4px;
+    margin-top: 8px;
+    gap: 8px;
+    transition: all 0.4s;
+
+}
+
+.section2 .drink .description .order .row:hover {
+    background-color: #85674c;
+}
+
+.section2 .drink .description .order .row p {
+    font-family: jakarta semibold;
+    font-size: 14px;
+    color: #0E0402;
+}
+
+.section2 .s2title .row {
+    display: none;
+}
+
+.section2 .s2title .HandcraftedMopile {
+    display: none;
+}
 
 @media (max-width : 800px) {
     header .circle {
@@ -383,9 +544,6 @@ header .container .navGap {
     }
 
     .machine {
-        /* position: absolute; */
-        /* z-index: 1; */
-        /* left: 0px; */
         display: none;
     }
 
@@ -465,4 +623,142 @@ header .container .navGap {
         gap: 4px;
     }
 
+    .section2 .container {
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+
+    .section2 .s2title .row {
+        display: flex;
+        gap: 6px;
+    }
+
+    .section2 .s2title .row .house {
+        font-family: jakarta semibold;
+        font-size: 12px;
+        color: #845326;
+    }
+
+    .section2 .s2title .HandcraftedMopile {
+        display: block;
+        font-family: jakartaReguler;
+        font-size: 14px;
+        color: #4F4442;
+        margin-bottom: 20px;
+    }
+
+    .section2 .s2title .curated {
+        display: none;
+    }
+
+    .section2 .s2title .Handcrafted {
+        display: none;
+    }
+
+    .section2 .s2title {
+        display: flex;
+        align-items: start;
+
+    }
+
+    .section2 .s2title {
+        padding-top: 50px;
+    }
+
+    .section2 .drink .item {
+        width: 100%;
+    }
+
+    .section2 .s2title .line {
+        width: 20px;
+        height: 1px;
+        background-color: #845326;
+    }
+
+    .section2 .s2title h2 {
+        font-size: 28px;
+    }
+
+    .section2 .drink .signiture {
+        display: none;
+    }
+
+    .section2 .drink .price {
+        right: 23px;
+        top: 23px;
+        height: fit-content;
+        background-color: #FFF8F3;
+        font-family: playfair semibold;
+        color: #0E0402;
+        border-radius: 12px;
+    }
+
+    .section2 .drink .description {
+        padding: 13px;
+    }
+
+    .section2 .drink .image {
+        padding: 13px;
+    }
+
+    .section2 .drink .description .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section2 .drink .description .row .hot {
+        display: block;
+        font-family: jakartaMedium;
+        font-size: 12px;
+        color: #845326;
+        padding: 2px 8px;
+        background-color: #F6ECE2;
+        margin-bottom: 5px;
+    }
+
+    .s2bottom {
+        display: none;
+    }
+
+    .section2 .drink .description .lines {
+        display: none;
+    }
+
+    .section2 .drink .description .ingredients {
+        border-bottom: none;
+    }
+
+    .section2 .drinks {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 80px;
+    }
+
+    .section2 .drink:hover {
+        transform: none;
+    }
+
+    .section2 .drink {
+        transition: none;
+    }
+
+    .section2 .drink .description .order .row {
+        transition: none;
+        background-color: #2B1B17;
+    }
+
+    .section2 .drink .description .order .row .arrow {
+        display: none;
+    }
+
+    .section2 .drink .description .order .row .bayingIcone {
+        display: block;
+    }
+
+    .section2 .drink .description .order .row p {
+        font-family: jakarta semibold;
+        font-size: 12px;
+        color: #FFF8F3;
+    }
 }
