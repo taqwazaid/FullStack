@@ -431,6 +431,173 @@ header .container .navGap {
     display: none;
 }
 
+.section3 .s3left {
+    margin-top: 48px;
+    /* margin-bottom: 112px; */
+}
+
+.section3 .container {
+    margin-top: 116px;
+    margin-bottom: 116px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 45px;
+}
+
+.section3 .s3left .coffeyShop {
+    position: relative;
+    width: fit-content;
+    padding: 0 15px;
+}
+
+.section3 .s3left .coffeyShop img {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.section3 .s3left .coffeyShop .est {
+    display: none;
+}
+
+.section3 .s3left .coffeyShop .crafting {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    background-color: #2B1B17;
+    border-radius: 8px;
+}
+
+.section3 .s3left .coffeyShop .crafting .firstCraft {
+    font-family: playfair semibold;
+    font-size: 28px;
+    color: #FFDCC2;
+
+}
+
+.section3 .s3left .coffeyShop .crafting .secondCraft {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #D3C3C0;
+
+}
+
+.s3right .heritage {
+    font-family: jakarta semibold;
+    font-size: 12px;
+    color: #845326;
+    padding: 6px 14px;
+    background-color: #F6ECE2;
+    border-radius: 12px;
+    width: fit-content;
+    border: 1px solid #D3C3C0;
+}
+
+.s3right h2 {
+    font-family: playfair semibold;
+    font-size: 40px;
+    color: #0E0402;
+    padding-top: 24px;
+}
+
+.s3right .philosophy {
+    display: none;
+}
+
+.s3right .story2 {
+    font-family: jakartaReguler;
+    font-size: 16px;
+    color: #4F4442;
+    padding-top: 24px;
+    padding-left: 4px;
+}
+
+.s3right .story1 {
+    display: none;
+}
+
+.s3right .communities {
+    padding-top: 24px;
+}
+
+.s3right .communities .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.s3right .community .row .comunityImage1 {
+    display: none;
+}
+
+.s3right .communities .row .comunityImage2 {
+    padding: 12px;
+    background-color: #F6ECE2;
+    border-radius: 4px;
+    border: 1px solid #D3C3C0'
+
+}
+
+.s3right .communities .row .first {
+    font-family: jakarta semibold;
+    font-size: 14px;
+    color: #0E0402;
+    padding-bottom: 3px;
+}
+
+.s3right .communities .row .second {
+    display: none;
+}
+
+.s3right .communities .community {
+    padding-bottom: 16px;
+}
+
+.s3right .communities .row .dis1 {
+    font-family: jakartaReguler;
+    font-size: 14px;
+    color: #4F4442;
+}
+
+.s3right .communities .row .dis2 {
+    display: none;
+}
+
+.s3right .communitie .com1 {
+    padding-top: 8px;
+}
+
+.s3right .discover {
+    padding-top: 40px;
+}
+
+.s3right .discover .row {
+    padding: 12px 28px;
+    background-color: #2B1B17;
+    border-radius: 4px;
+    gap: 8px;
+    width: fit-content;
+    align-items: center;
+    border: 1px solid #2B1B17;
+    cursor: pointer;
+}
+
+.s3right .discover button p {
+    font-family: jakarta semibold;
+    font-size: 14px;
+    color: #FFF8F3;
+    transition: all 0.4s;
+}
+
+.s3right .discover button:hover {
+    background-color: #ac6856;
+    border: #ae4f35 1px solid;
+}
+
 @media (max-width : 800px) {
     header .circle {
         width: 10px;
@@ -516,9 +683,6 @@ header .container .navGap {
         display: contents;
     }
 
-    /* .section1 .right {
-        display: contents;
-    } */
 
     .section1 .right .rotate {
         display: none;
@@ -760,5 +924,140 @@ header .container .navGap {
         font-family: jakarta semibold;
         font-size: 12px;
         color: #FFF8F3;
+    }
+
+    .section3 .container {
+        width: calc(100% - 20px);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .section3 .s3left .coffeyShop .crafting {
+        display: none;
+    }
+
+    .section3 .s3left .coffeyShop {
+        padding: 0px;
+    }
+
+    .section3 .s3left .coffeyShop .est {
+        display: block;
+        font-family: jakarta semibold;
+        font-size: 12px;
+        color: #FFF8F3;
+        background-color: rgb(43, 27, 23, 90%);
+        border-radius: 12px;
+        padding: 4px 10px;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+    }
+
+    .section3 .s3left .coffeyShop img {
+        padding: 0px;
+    }
+
+    .s3right .heritage {
+        display: none;
+    }
+
+    .s3right .philosophy {
+        display: block;
+        padding-bottom: 4px;
+    }
+
+    .s3right .philosophy .row {
+        gap: 6px;
+    }
+
+    .s3right .philosophy .row .line {
+        width: 20px;
+        height: 1px;
+        background-color: #845326;
+    }
+
+    .s3right .philosophy .row p {
+        font-family: jakarta semibold;
+        font-size: 12px;
+        color: #845326;
+    }
+
+    .s3right h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .s3right .story1 {
+        display: block;
+        font-family: jakartaReguler;
+        font-size: 14px;
+        color: #4F4442;
+        padding-bottom: 20px;
+    }
+
+    .s3right .story2 {
+        display: none;
+    }
+
+    .s3right .communities .row .second {
+        display: block;
+        font-family: jakarta semibold;
+        font-size: 14px;
+        color: #0E0402;
+
+    }
+
+    .s3right .communities .row .first {
+        display: none;
+    }
+
+    .s3right .communities .row .dis2 {
+        display: block;
+        font-family: jakartaReguler;
+        font-size: 12px;
+        color: #4F4442;
+
+    }
+
+    .s3right .communities .row .dis1 {
+        display: none;
+    }
+    .s3right .communities .community {
+        background-color: #FCF2E8;
+        border: 1px solid #D3C3C0;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 14px;
+    }
+
+    .s3right .community .row .comunityImage1 {
+        display: block;
+        padding: 11px;
+        background-color: #F6ECE2;
+        border-radius: 4px;
+
+    }
+
+    .s3right .community .row .comunityImage2 {
+        display: none;
+    }
+    .s3right .discover .row{
+        width: 100%;
+        background-color: #F6ECE2;
+        border-radius: 4px;
+        border: 1px solid #D3C3C0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .s3right .discover .row p{
+        color: #0E0402;
+    }
+    .s3right .discover img{
+        display: none;
     }
 }
