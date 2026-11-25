@@ -430,17 +430,17 @@ header .container .navGap {
 .section2 .drinks .drink1 {
     animation: deinksAnimation 1s ease both;
     animation-timeline: view();
-    animation-range: entry 0% entry 100%;
+    animation-range: entry 50% entry 100%;
 }
 
 .section2 .drinks .drink2 {
-    animation: deinksAnimation 1s 1s ease both;
+    animation: deinksAnimation 1s 2s ease both;
     animation-timeline: view();
     animation-range: entry 0% entry 100%;
 }
 
 .section2 .drinks .drink3 {
-    animation: deinksAnimation 1s 2s ease both;
+    animation: deinksAnimation 1s 3s ease both;
     animation-timeline: view();
     animation-range: entry 0% entry 100%;
 }
@@ -537,7 +537,7 @@ header .container .navGap {
     margin-top: 48px;
     animation: s3leftAnimation 2s ease both;
     animation-timeline: view();
-    animation-range: entry 0% entry 100%;
+    animation-range: entry 50% entry 100%;
 }
 
 .section3 .container {
